@@ -6,7 +6,7 @@ export function Index() {
   return (
     <div className="fade-in">
       <Header />
-      <main className="min-h-screen bg-gray-50 border-t-4 border-khaki">
+      <main className="min-h-screen bg-gray-50 border-t-4 border-cream-dark">
         <Outlet />
       </main>
       <Footer />

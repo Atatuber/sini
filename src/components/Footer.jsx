@@ -12,12 +12,16 @@ export function Footer() {
           . Alle rechten voorbehouden.
         </p>
         <div className="space-x-6">
-          <a href="/privacy-voorwaarden" className="hover:underline">
-            Privacy Beleid
-          </a>
-          <a href="/terms" className="hover:underline">
-            Contact
-          </a>
+          <p>
+            Gemaakt door{" "}
+            <a
+              href="https://github.com/atatuber"
+              className="font-bold underline hover:text-gray-600 transition-300 ease-in-out"
+            >
+              Atakan Ozkan
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>

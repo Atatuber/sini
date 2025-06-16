@@ -10,11 +10,15 @@ import { StrictMode } from "react";
 import "./index.css";
 import { Index } from "./pages/Index.jsx";
 import HomePage from "./pages/HomePage.jsx";
+import MenuPage from "./pages/MenuPage.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Index />}>
-      <Route path="" element={<HomePage />} />
+      <Route path="*" element={<ErrorPage />} />
+      <Route path="/" element={<HomePage />} />
+      <Route path="/menukaart" element={<MenuPage />} />
     </Route>
   )
 );

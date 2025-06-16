@@ -10,8 +10,8 @@ export function MapsAndTimes() {
   ];
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen border-t-4 border-khaki">
-      <div className="flex flex-col justify-center w-full max-w-xl mx-auto space-y-6">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen border-t-4 border-cream-dark p-8">
+      <div className="flex flex-col justify-center w-full max-w-xl mx-auto space-y-6 mb-12 mt-12">
         <div className="text-left">
           <h3 className="text-3xl font-bold mb-2">Locatie</h3>
           <p className="text-md mb-4">

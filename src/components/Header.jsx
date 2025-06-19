@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo-light.png";
 
 export function Header() {
   return (
@@ -50,11 +51,7 @@ export function Header() {
         {/* Logo */}
         <div className="flex justify-center">
           <Link to="/">
-            <img
-              alt="Sini logo"
-              src="../src/assets/logo-light.png"
-              className="w-32 md:w-40"
-            />
+            <img alt="Sini logo" src={Logo} className="w-32 md:w-40" />
           </Link>
         </div>
 

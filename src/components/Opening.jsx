@@ -1,8 +1,10 @@
+import Video from "../assets/example-video.mp4";
+
 export function Opening() {
   return (
     <div className="relative w-full h-[480px] md:h-[600px] lg:h-[720px]">
       <video className="w-full h-full object-cover" autoPlay muted loop>
-        <source src="../../src/assets/example-video.mp4" type="video/mp4" />
+        <source src={Video} type="video/mp4" />
       </video>
 
       {/* Blur overlay */}

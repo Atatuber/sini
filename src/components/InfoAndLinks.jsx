@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Interieur from "../assets/sini-interieur.jpg";
 
 export function InfoAndLinks() {
   return (
@@ -69,7 +70,7 @@ export function InfoAndLinks() {
       <div className="flex justify-center items-center p-6">
         <img
           alt="Sini interieur"
-          src="../../src/assets/sini-interieur.jpg"
+          src={Interieur}
           className="w-full max-w-lg object-cover rounded-md border-4 border-khaki shadow-md"
         />
       </div>

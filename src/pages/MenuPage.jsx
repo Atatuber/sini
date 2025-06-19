@@ -60,17 +60,17 @@ export function MenuPage() {
   return (
     <div className="flex flex-col fade-in">
       {/* Introductie */}
-      <div className="flex flex-col justify-center items-center w-full m-12">
-        <div className="max-w-2xl text-center space-y-2">
-          <div className="flex justify-center items-center space-x-3 secondary-font text-5xl">
-            <h3 className=" font-medium text-cream-dark text-shadow-sm mb-2">
+      <div className="flex flex-col justify-center items-center w-full px-4 py-8">
+        <div className="max-w-2xl text-center space-y-4">
+          <div className="flex justify-center items-center flex-wrap gap-2 secondary-font">
+            <h3 className="text-2xl md:text-4xl font-medium text-cream-dark text-shadow-sm">
               Onze
             </h3>
-            <h2 className=" font-medium mb-2 text-shadow-cream-dark">
+            <h2 className="text-2xl md:text-4xl font-medium text-shadow-cream-dark">
               Menukaart
             </h2>
           </div>
-          <p className="text-xl font-medium">
+          <p className="text-md sm:text-base md:text-lg font-medium">
             Onze menukaart staat voor kwaliteit en lekkers. Begin je dag goed
             met een uitgebreid Turks ontbijt, boordevol authentieke smaken en
             verse ingrediënten. Liever iets klassieks? We serveren ook heerlijke

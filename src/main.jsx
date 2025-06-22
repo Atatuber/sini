@@ -13,6 +13,12 @@ import HomePage from "./pages/HomePage.jsx";
 import MenuPage from "./pages/MenuPage.jsx";
 import ErrorPage from "./pages/ErrorPage.jsx";
 
+const pathName = window.location.pathname;
+if (pathName !== "/" && pathName.includes("/?/")) {
+  const route = pathName.split("/?/")[1] || "";
+  window.history.replaceState(null, null, "/" + route);
+}
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Index />}>

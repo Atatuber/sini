@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo-light.png";
+import Logo from "../assets/sini.svg";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +43,11 @@ export function Header() {
         {/* Logo */}
         <div className="flex justify-center">
           <Link to="/">
-            <img alt="Sini logo" src={Logo} className="w-32 md:w-40" />
+            <img
+              alt="Sini logo"
+              src={Logo}
+              className="w-32 md:w-40 rounded-md"
+            />
           </Link>
         </div>
 

@@ -16,7 +16,7 @@ export function Footer() {
             Gemaakt door{" "}
             <a
               href="https://github.com/atatuber"
-              className="font-bold underline hover:text-gray-600 transition-300 ease-in-out"
+              className="font-bold text-sm underline hover:text-gray-600 transition-300 ease-in-out"
             >
               Atakan Ozkan
             </a>

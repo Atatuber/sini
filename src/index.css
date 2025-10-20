@@ -2,8 +2,10 @@
 
 @theme {
   --color-cream: #eee1c6;
+  --color-cream-light: #f5eddd;
   --color-cream-dark: #e3d4ad;
   --color-khaki: #d3bc8d;
+  --color-cream-darkest: #c4a669;
 }
 
 @keyframes fadeIn {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <footer className="bg-white p-8 border-t-4 border-cream-dark">
+    <footer className="p-8 border-t-4 border-cream-dark">
       <div className="flex justify-around">
         <p className="text-sm">
           &copy; {new Date().getFullYear()}{" "}

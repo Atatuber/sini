@@ -13,9 +13,6 @@ export function Opening() {
         <source src={Video} type="video/mp4" />
       </video>
 
-      {/* Blur overlay */}
-      <div className="absolute inset-0 backdrop-blur-sm"></div>
-
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center px-4">
         <div className="backdrop-blur-md rounded-xl p-6 md:p-10 border border-white border-opacity-30 shadow-xl max-w-4xl text-center">

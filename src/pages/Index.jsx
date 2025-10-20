@@ -4,9 +4,9 @@ import Footer from "../components/Footer";
 
 export function Index() {
   return (
-    <div className="fade-in">
+    <div className="fade-in bg-gradient-to-r from-cream-light to-khaki">
       <Header />
-      <main className="min-h-screen bg-gray-50 border-t-4 border-cream-dark">
+      <main className="min-h-screen">
         <Outlet />
       </main>
       <Footer />

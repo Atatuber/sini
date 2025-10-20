@@ -38,15 +38,15 @@ export function Header() {
   );
 
   return (
-    <header className="bg-white max-w-screen-2xl mx-auto p-4">
-      <div className="flex justify-between items-center">
+    <header className="max-w-screen-3xl mx-auto p-4 border-b-4 border-b-cream-dark">
+      <div className="flex justify-around items-center">
         {/* Logo */}
         <div className="flex justify-center">
           <Link to="/">
             <img
               alt="Sini logo"
               src={Logo}
-              className="w-32 md:w-40 rounded-md"
+              className="w-32 md:w-40 rounded-md shadow-md"
             />
           </Link>
         </div>

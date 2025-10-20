@@ -15,7 +15,7 @@ export function HomePage() {
   }, [location]);
 
   return (
-    <div className="fade-in-home">
+    <div className="fade-in-home bg-gradient-to-r from-cream-light to-khaki">
       <Opening />
       <InfoAndLinks />
       <MapsAndTimes />

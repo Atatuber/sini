@@ -1,9 +1,17 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Logo from "../assets/sini.svg";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isOnCurrentPath = (url) => {
+    return url === location.pathname
+      ? "block font-medium px-6 py-3 rounded-2xl bg-[#4B382A] text-[#FAF3DD] transition-all duration-200 h-11 text-base leading-[1.15] w-full"
+      : "block border border-[#4B382A] text-[#4B382A] bg-[#FAF3DD] font-medium px-6 py-3 rounded-2xl hover:bg-[#4B382A] hover:text-[#FAF3DD] transition-all duration-200 h-11 text-base leading-[1.15] w-full";
+  };
 
   const menuButton = isMenuOpen ? (
     <svg
@@ -38,7 +46,7 @@ export function Header() {
   );
 
   return (
-    <header className="max-w-screen-3xl mx-auto p-4 border-b-4 border-b-cream-dark">
+    <header className="max-w-screen-3xl mx-auto p-4 border-b-2 border-khaki/30">
       <div className="flex justify-around items-center">
         {/* Logo */}
         <div className="flex justify-center">
@@ -52,7 +60,7 @@ export function Header() {
         </div>
 
         <button
-          className="md:hidden transition-all duration-300 ease-in-out border border-gray-300 shadow-md hover:shadow-lg hover:scale-105 rounded-lg p-2 flex"
+          className="md:hidden bg-[#FAF3DD] transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:scale-105 rounded-lg p-2 flex"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -65,28 +73,13 @@ export function Header() {
         <nav className="hidden md:flex justify-center">
           <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center">
             <li>
-              <Link
-                to="/"
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
+              <Link to="/" className={isOnCurrentPath("/")}>
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                to="/menukaart"
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
+              <Link to="/menukaart" className={isOnCurrentPath("/menukaart")}>
                 Menukaart
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                state={{ scrollToBottom: true }}
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
-                Locatie en Openingstijden
               </Link>
             </li>
           </ul>
@@ -98,31 +91,13 @@ export function Header() {
         <div className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2 text-center">
             <li>
-              <Link
-                to="/"
-                onClick={() => setIsMenuOpen(false)}
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
+              <Link to="/" className={isOnCurrentPath("/")}>
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                to="/menukaart"
-                onClick={() => setIsMenuOpen(false)}
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
+              <Link to="/menukaart" className={isOnCurrentPath("/menukaart")}>
                 Menukaart
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/"
-                state={{ scrollToBottom: true }}
-                onClick={() => setIsMenuOpen(false)}
-                className="bg-cream-dark hover:bg-cream-light hover:shadow-sm transform transition-all duration-300 ease-in-out px-4 py-2.5 rounded-lg border border-cream-dark hover:border-cream block"
-              >
-                Locatie en Openingstijden
               </Link>
             </li>
           </ul>

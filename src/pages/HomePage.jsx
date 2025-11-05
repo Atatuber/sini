@@ -1,7 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import InfoAndLinks from "../components/InfoAndLinks";
-import MapsAndTimes from "../components/MapsAndTimes";
 import Opening from "../components/Opening";
 
 export function HomePage() {
@@ -15,10 +14,9 @@ export function HomePage() {
   }, [location]);
 
   return (
-    <div className="fade-in-home bg-gradient-to-r from-cream-light to-khaki">
+    <div className="fade-in-home bg-linear-to-r from-cream-light to-khaki">
       <Opening />
       <InfoAndLinks />
-      <MapsAndTimes />
     </div>
   );
 }

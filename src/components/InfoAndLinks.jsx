@@ -3,7 +3,7 @@ import Interieur from "../assets/sini-interieur.jpg";
 
 export function InfoAndLinks() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen border-t-4 border-cream-dark">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
       <div className="flex flex-col justify-center items-center p-12 md:px-8 space-y-8">
         <div className="max-w-xl space-y-4 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-semibold">
@@ -17,7 +17,7 @@ export function InfoAndLinks() {
             Neem gerust een kijkje op onze website of kom langs.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+        <div className="flex flex-col justify-start sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
           <button
             onClick={() =>
               window.scrollTo({
@@ -25,7 +25,7 @@ export function InfoAndLinks() {
                 behavior: "smooth",
               })
             }
-            className="hover:cursor-pointer flex justify-center items-center space-x-2 rounded-md shadow-md px-4 py-2 border border-khaki font-medium bg-cream-dark hover:drop-shadow-lg transition-all duration-300 ease-in-out"
+            className="hover:cursor-pointer flex justify-center items-center space-x-2 rounded-md shadow-sm px-4 py-2 font-medium bg-cream-dark hover:drop-shadow-md transition-all duration-300 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export function InfoAndLinks() {
 
           <Link
             to="/menukaart"
-            className="flex justify-center items-center space-x-2 rounded-md shadow-md px-4 py-2 border border-khaki font-medium bg-cream-dark hover:drop-shadow-lg transition-all duration-300 ease-in-out"
+            className="hover:cursor-pointer flex justify-center items-center space-x-2 rounded-md shadow-sm px-4 py-2 font-medium bg-cream-dark hover:drop-shadow-md transition-all duration-300 ease-in-out"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -8,6 +8,7 @@ export function Opening() {
         autoPlay
         muted
         loop
+        preload="metadata"
         playsInline
       >
         <source src={Video} type="video/mp4" />

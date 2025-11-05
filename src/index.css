@@ -57,3 +57,9 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.borel-regular {
+  font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

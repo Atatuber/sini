@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
-import Logo from "../assets/sini.svg";
+import Logo from "../assets/sini-no-background.svg";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +10,7 @@ export function Header() {
   const isOnCurrentPath = (url) => {
     return url === location.pathname
       ? "block font-medium px-6 py-3 rounded-2xl bg-[#4B382A] text-[#FAF3DD] transition-all duration-200 h-11 text-base leading-[1.15] w-full"
-      : "block border border-[#4B382A] text-[#4B382A] bg-[#FAF3DD] font-medium px-6 py-3 rounded-2xl hover:bg-[#4B382A] hover:text-[#FAF3DD] transition-all duration-200 h-11 text-base leading-[1.15] w-full";
+      : "block shadow-xs text-[#4B382A] bg-[#FAF3DD] font-medium px-6 py-3 rounded-2xl hover:bg-[#4B382A] hover:text-[#FAF3DD] transition-all duration-200 h-11 text-base leading-[1.15] w-full";
   };
 
   const menuButton = isMenuOpen ? (
@@ -18,7 +18,7 @@ export function Header() {
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      stroke-width="1.5"
+      strokeWidth="1.5"
       stroke="currentColor"
       class="size-8"
     >
@@ -46,16 +46,11 @@ export function Header() {
   );
 
   return (
-    <header className="max-w-screen-3xl mx-auto p-4 border-b-2 border-khaki/30">
+    <header className="max-w-screen-3xl mx-auto w-full">
       <div className="flex justify-around items-center">
-        {/* Logo */}
         <div className="flex justify-center">
           <Link to="/">
-            <img
-              alt="Sini logo"
-              src={Logo}
-              className="w-32 md:w-40 rounded-md shadow-md"
-            />
+            <img alt="Sini logo" src={Logo} className="w-50 rounded-md" />
           </Link>
         </div>
 
@@ -69,7 +64,6 @@ export function Header() {
           </span>
         </button>
 
-        {/* Navigatie */}
         <nav className="hidden md:flex justify-center">
           <ul className="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0 text-center">
             <li>
@@ -86,9 +80,8 @@ export function Header() {
         </nav>
       </div>
 
-      {/* Dropdown Menu - Mobile only */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4">
+        <div className="md:hidden mt-4 p-4">
           <ul className="flex flex-col space-y-2 text-center">
             <li>
               <Link to="/" className={isOnCurrentPath("/")}>

@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "./font.css";
+
+@theme {
+  --color-cream: #eee1c6;
+  --color-cream-light: #f5eddd;
+  --color-cream-dark: #e3d4ad;
+  --color-khaki: #d3bc8d;
+  --color-cream-darkest: #c4a669;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}

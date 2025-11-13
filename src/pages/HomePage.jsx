@@ -14,7 +14,7 @@ export function HomePage() {
   }, [location]);
 
   return (
-    <div className="fade-in-home bg-linear-to-r from-cream-light to-khaki">
+    <div className="fade-in">
       <Opening />
       <InfoAndLinks />
     </div>

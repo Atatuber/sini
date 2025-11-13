@@ -7,7 +7,7 @@ import {
 import { createRoot } from "react-dom/client";
 import { StrictMode } from "react";
 
-import "./index.css";
+import "./styles/index.css";
 import { Index } from "./pages/Index.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import MenuPage from "./pages/MenuPage.jsx";

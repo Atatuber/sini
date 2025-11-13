@@ -23,9 +23,9 @@ export function Footer() {
       <g
         id="Page-1"
         stroke="none"
-        stroke-width="1"
+        strokeWidth="1"
         fill="none"
-        fill-rule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Dribbble-Light-Preview"
@@ -58,11 +58,11 @@ export function Footer() {
   );
 
   return (
-    <footer className="text-stone-700 border-t-2 border-khaki/30">
+    <footer className="text-stone-700">
       <section className="max-w-6xl mx-auto px-6 py-12 text-center space-y-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left md:text-center">
           <div className="space-y-3">
-            <h3 className="text-2xl font-bold text-stone-800">LOCATIE</h3>
+            <h3 className="text-2xl font-bold text-stone-800">Locatie</h3>
             <p>
               Je vindt ons aan het <br />
               <span className="font-semibold">Hisveltplein 21, Arnhem</span>.
@@ -75,7 +75,7 @@ export function Footer() {
 
           <div className="space-y-3">
             <h3 className="text-2xl font-bold text-stone-800">
-              OPENINGSTIJDEN
+              Openingstijden
             </h3>
             <div className="space-y-1">
               {openingTimes.map(({ day, time }) => (
@@ -91,7 +91,7 @@ export function Footer() {
           </div>
 
           <div className="space-y-3 lg:flex lg:flex-col lg:items-center">
-            <h3 className="text-2xl font-bold text-stone-800">CONTACT</h3>
+            <h3 className="text-2xl font-bold text-stone-800">Contact</h3>
             <div className="space-y-2 flex flex-col justify-start items-start">
               <p className="flex justify-center gap-2">
                 <strong>E-mail:</strong> info@sinilunchroom.nl
@@ -132,7 +132,7 @@ export function Footer() {
                 link="https://www.tiktok.com/@sini.lunchroom"
               />
             </div>
-            <div className="text-sm text-stone-600 order-3 md:text-right flex justify-center items-center gap-x-1">
+            <div className="text-sm order-3 md:text-right flex justify-center items-center gap-x-1">
               <p className="font-semibold">Ontworpen door</p>
               <a
                 href="https://github.com/atatuber"

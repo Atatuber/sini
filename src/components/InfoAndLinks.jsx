@@ -3,9 +3,9 @@ import Interieur from "../assets/sini-interieur.jpg";
 
 export function InfoAndLinks() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen w-full">
       <div className="flex flex-col justify-center items-center p-12 md:px-8 space-y-8">
-        <div className="max-w-xl space-y-4 text-center md:text-left">
+        <div className="max-w-xl space-y-4 text-center md:text-left w-full">
           <h2 className="text-3xl md:text-4xl font-semibold">
             Kom langs en laat je verwennen.
           </h2>
@@ -17,7 +17,7 @@ export function InfoAndLinks() {
             Neem gerust een kijkje op onze website of kom langs.
           </p>
         </div>
-        <div className="flex flex-col justify-start sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+        <div className="max-w-xl w-full flex flex-col justify-start sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
           <button
             onClick={() =>
               window.scrollTo({
@@ -25,7 +25,7 @@ export function InfoAndLinks() {
                 behavior: "smooth",
               })
             }
-            className="hover:cursor-pointer flex justify-center items-center space-x-2 rounded-md shadow-sm px-4 py-2 font-medium bg-cream-dark hover:drop-shadow-md transition-all duration-300 ease-in-out"
+            className="flex justify-center items-center shadow-xs text-[#4B382A] bg-[#FAF3DD] font-medium px-6 py-3 rounded-2xl hover:bg-[#4B382A] hover:text-[#FAF3DD] transition-all duration-200 h-11 w-full gap-2 hover:cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export function InfoAndLinks() {
 
           <Link
             to="/menukaart"
-            className="hover:cursor-pointer flex justify-center items-center space-x-2 rounded-md shadow-sm px-4 py-2 font-medium bg-cream-dark hover:drop-shadow-md transition-all duration-300 ease-in-out"
+            className="flex justify-center items-center shadow-xs text-[#4B382A] bg-[#FAF3DD] font-medium px-6 py-3 rounded-2xl hover:bg-[#4B382A] hover:text-[#FAF3DD] transition-all duration-200 h-11 w-full gap-2 hover:cursor-pointer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
